@@ -1,0 +1,17 @@
+os: osx
+osx_image: xcode9.3
+
+before_install:
+    - export HOMEBREW_NO_AUTO_UPDATE=1
+    - export HOMEBREW_DEVELOPER=1
+    - brew update
+
+
+install:
+    - pwd
+    - ls -la
+    - brew tap bjoernhaeuser/php file:///Users/travis/build/bjoernhaeuser/homebrew-php
+    - brew tap homebrew/test-bot
+
+script:
+    - brew test-bot --no-bottle
