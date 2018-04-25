@@ -1,9 +1,9 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Pdflib < AbstractPhp56Extension
   init
   desc "Creating PDF on the fly with the PDFlib library"
-  homepage "http://www.pdflib.com"
+  homepage "https://www.pdflib.com"
   url "https://pecl.php.net/get/pdflib-3.0.4.tgz"
   sha256 "18de7bf00983a5b0fbbd4f7e993ecf948217072ae6ebff9fbb0eef88b8984b7e"
 

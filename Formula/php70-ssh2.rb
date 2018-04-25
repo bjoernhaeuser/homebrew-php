@@ -1,4 +1,4 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php70Ssh2 < AbstractPhp70Extension
   init
@@ -12,7 +12,7 @@ class Php70Ssh2 < AbstractPhp70Extension
 
   def install
     Dir.chdir "ssh2-#{version}" unless build.head?
-    
+
     safe_phpize
     system "./configure", "--prefix=#{prefix}",
                           phpconfig,

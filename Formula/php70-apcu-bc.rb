@@ -1,4 +1,4 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php70ApcuBc < AbstractPhp70Extension
   init
@@ -41,4 +41,3 @@ class Php70ApcuBc < AbstractPhp70Extension
     "ext-bc-" + extension + ".ini"
   end
 end
-

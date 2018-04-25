@@ -1,4 +1,4 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php70Pthreads < AbstractPhp70Extension
   init ["with-thread-safety"]

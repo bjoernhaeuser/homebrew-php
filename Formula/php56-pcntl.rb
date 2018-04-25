@@ -1,9 +1,9 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Pcntl < AbstractPhp56Extension
   init
   desc "Process Control support"
-  homepage "http://php.net/manual/en/book.pcntl.php"
+  homepage "https://php.net/manual/en/book.pcntl.php"
   url PHP_SRC_TARBALL
   sha256 PHP_CHECKSUM[:sha256]
   revision 6

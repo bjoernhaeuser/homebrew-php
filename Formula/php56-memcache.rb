@@ -1,4 +1,4 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Memcache < AbstractPhp56Extension
   init
@@ -6,7 +6,7 @@ class Php56Memcache < AbstractPhp56Extension
   homepage "https://pecl.php.net/package/memcache"
   url "https://pecl.php.net/get/memcache-2.2.7.tgz"
   sha256 "73006c02194a5a7c196c6488d449e5f8c75573a73568fe1a94b15157c147305d"
-  head "https://svn.php.net/repository/pecl/memcache/trunk/"
+  head "https://pecl.php.net/get/memcache"
 
   devel do
     url "https://pecl.php.net/get/memcache-3.0.8.tgz"
@@ -18,9 +18,9 @@ class Php56Memcache < AbstractPhp56Extension
 
     ENV.universal_binary if build.universal?
 
-    ENV['CFLAGS'] = '-fgnu89-inline'
-    ENV['LDFLAGS'] = '-fgnu89-inline'
-    ENV['CXXFLAGS'] = '-fgnu89-inline'
+    ENV["CFLAGS"] = "-fgnu89-inline"
+    ENV["LDFLAGS"] = "fgnu89-inline"
+    ENV["CXXFLAGS"] = "-fgnu89-inline"
 
     safe_phpize
     system "./configure", "--prefix=#{prefix}",

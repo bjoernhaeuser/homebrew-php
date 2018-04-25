@@ -1,10 +1,10 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Xcache < AbstractPhp56Extension
   init
   desc "XCache is a fast, stable ​PHP opcode cacher."
-  homepage "http://xcache.lighttpd.net"
-  url "http://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.bz2"
+  homepage "https://xcache.lighttpd.net"
+  url "https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.bz2"
   sha256 "7d12a3cbd5f729b70f9226ac19406d11219f1c5f5e82b3bbb43ea9460cbf6cbd"
 
   def install

@@ -1,4 +1,4 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Binpack < AbstractPhp56Extension
   init
@@ -6,7 +6,7 @@ class Php56Binpack < AbstractPhp56Extension
   homepage "https://pecl.php.net/package/binpack"
   url "https://pecl.php.net/get/binpack-1.0.1.tgz"
   sha256 "70617a721df4f8c52b5b1b214c11e464f8c36915cc19a850f24fed500c61b297"
-  head "http://binpack.liaohuqiu.net"
+  head "https://binpack.liaohuqiu.net"
 
   def install
     Dir.chdir "binpack-#{version}" unless build.head?
