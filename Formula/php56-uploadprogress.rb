@@ -1,4 +1,4 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Uploadprogress < AbstractPhp56Extension
   init
@@ -6,7 +6,7 @@ class Php56Uploadprogress < AbstractPhp56Extension
   homepage "https://pecl.php.net/package/uploadprogress"
   url "https://pecl.php.net/get/uploadprogress-1.0.3.1.tgz"
   sha256 "30588b4589543bcf6371532546b1a8cee9da1086c206aca9f96ea1bd486bbab2"
-  head "https://svn.php.net/repository/pecl/uploadprogress/trunk/"
+  head "https://pecl.php.net/get/uploadprogress"
 
   depends_on "pcre"
 

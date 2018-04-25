@@ -1,9 +1,9 @@
-require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
+require File.expand_path("../Abstract/abstract-php-extension", __dir__)
 
 class Php56Mcrypt < AbstractPhp56Extension
   init
   desc "Interface to the mcrypt library"
-  homepage "http://php.net/manual/en/book.mcrypt.php"
+  homepage "https://php.net/manual/en/book.mcrypt.php"
   url PHP_SRC_TARBALL
   sha256 PHP_CHECKSUM[:sha256]
   revision 7
