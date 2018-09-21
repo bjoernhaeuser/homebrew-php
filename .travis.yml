@@ -6,8 +6,8 @@ cache:
 directories:
   - /usr/local/Homebrew/Library/Homebrew/vendor/bundle
 branches:
-only:
-  - master
+  only:
+    - master
 
 before_install:
   - sudo chown -R "$USER" "$(brew --repo)"
@@ -18,4 +18,4 @@ before_install:
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
 
 script:
-- brew test-bot
+  - brew test-bot
