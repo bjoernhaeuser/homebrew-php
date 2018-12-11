@@ -51,35 +51,46 @@ class AbstractPhpVersion < Formula
   end
 
   module Php70Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.0.27.tar.bz2/from/this/mirror".freeze
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.0.33.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
-    PHP_VERSION     = "7.0.27".freeze
+    PHP_VERSION     = "7.0.33".freeze
     PHP_BRANCH      = "PHP-7.0".freeze
 
     PHP_CHECKSUM    = {
-      :sha256 => "99fa2563bb4c4c1cde9febe87cfe97324227d7b4b8828f2e936e507127394131",
+      :sha256 => "4933ea74298a1ba046b0246fe3771415c84dfb878396201b56cb5333abe86f07",
     }.freeze
   end
 
   module Php71Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.1.18.tar.bz2/from/this/mirror".freeze
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.1.25.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
-    PHP_VERSION     = "7.1.18".freeze
+    PHP_VERSION     = "7.1.25".freeze
     PHP_BRANCH      = "PHP-7.1".freeze
 
     PHP_CHECKSUM    = {
-      :sha256 => "580e375515ede831a6d82e13c0ec25dd08b225c6d87dfc24d7cd5f3bd542bf8e",
+      :sha256 => "002cdc880ac7cfaede2c389204d366108847db0f3ac72edf1ba95c0577f9aaac",
     }.freeze
   end
 
   module Php72Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.2.4.tar.bz2/from/this/mirror".freeze
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.2.13.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
-    PHP_VERSION     = "7.2.4".freeze
+    PHP_VERSION     = "7.2.13".freeze
     PHP_BRANCH      = "PHP-7.2".freeze
 
     PHP_CHECKSUM    = {
-      :sha256 => "11658a0d764dc94023b9fb60d4b5eb75d438ad17981efe70abb0d0d09a447ef3",
+        :sha256 => "5b4a46fb76491bcd3eee1213773382e570f6ecf9b22d623b24e2822298b3e92d",
+    }.freeze
+  end
+
+  module Php73Defs
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.3.0.tar.bz2/from/this/mirror".freeze
+    PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
+    PHP_VERSION     = "7.3.0".freeze
+    PHP_BRANCH      = "PHP-7.3".freeze
+
+    PHP_CHECKSUM    = {
+      :sha256 => "7a267daec9969a997c5c8028c350229646748e0fcc71e2f2dbb157ddcee87c67",
     }.freeze
   end
 end
