@@ -236,6 +236,15 @@ class AbstractPhp72Extension < AbstractPhpExtension
 
   def self.init(opts = [])
     super()
+    depends_on "php72" => opts if build.with?("homebrew-php")
+  end
+end
+
+class AbstractPhp73Extension < AbstractPhpExtension
+  include AbstractPhpVersion::Php73Defs
+
+  def self.init(opts = [])
+    super()
     depends_on "php" => opts if build.with?("homebrew-php")
   end
 end
