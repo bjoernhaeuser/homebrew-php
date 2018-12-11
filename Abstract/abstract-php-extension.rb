@@ -55,7 +55,11 @@ class AbstractPhpExtension < Formula
   end
 
   def php_formula
-    "php" + php_branch.sub(".", "")
+    if "php" + php_branch.sub(".", "") != "php73"
+      "php" + php_branch.sub(".", "")
+    else
+      "php"
+    end
   end
 
   def safe_phpize
