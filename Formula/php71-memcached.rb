@@ -4,8 +4,8 @@ class Php71Memcached < AbstractPhp71Extension
   init
   desc "Memcached via libmemcached library"
   homepage "https://pecl.php.net/package/memcached"
-  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.0.3.tar.gz"
-  sha256 "9041ab502740678a2db158c152467b039e3e4d5c6b207939c2955c75fd345c96"
+  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.1.3.tar.gz"
+  sha256 "4b87296d69ad90e2c2f8767a45296730f1a64cbd49e8532e6022c413716ae790"
   head "https://github.com/php-memcached-dev/php-memcached.git"
   revision 3
 
@@ -36,7 +36,7 @@ class Php71Memcached < AbstractPhp71Extension
   end
 
   def config_file
-    # Use upsteam defaults (https://github.com/php-memcached-dev/php-memcached/blob/2.2.0/memcached.ini)
+    # Use upstream defaults (https://github.com/php-memcached-dev/php-memcached/blob/2.2.0/memcached.ini)
     # with default values pre-filled
     super + <<~EOS
 

@@ -4,8 +4,8 @@ class Php72Memcached < AbstractPhp72Extension
   init
   desc "Memcached via libmemcached library"
   homepage "https://pecl.php.net/package/memcached"
-  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.0.4.tar.gz"
-  sha256 "4613a9dd4cf5baa7ac3535df63a8c2ae83492e8aa8a729805f8be36f520b138c"
+  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.1.3.tar.gz"
+  sha256 "4b87296d69ad90e2c2f8767a45296730f1a64cbd49e8532e6022c413716ae790"
 
   option "with-sasl", "Build with sasl support"
 
@@ -34,7 +34,7 @@ class Php72Memcached < AbstractPhp72Extension
   end
 
   def config_file
-    # Use upsteam defaults (https://github.com/php-memcached-dev/php-memcached/blob/2.2.0/memcached.ini)
+    # Use upstream defaults (https://github.com/php-memcached-dev/php-memcached/blob/2.2.0/memcached.ini)
     # with default values pre-filled
     super + <<~EOS
 
