@@ -222,7 +222,7 @@ class AbstractPhp70Extension < AbstractPhpExtension
 
   def self.init(opts = [])
     super()
-    depends_on "php@7.0" => opts if build.with?("homebrew-php")
+    depends_on "php70" => opts if build.with?("homebrew-php")
   end
 end
 

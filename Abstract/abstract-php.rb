@@ -621,10 +621,6 @@ INFO
 
   test do
     system "#{bin}/php -i"
-
-    if build_fpm?
-      system "#{sbin}/php-fpm -y #{config_path}/php-fpm.conf -t"
-    end
   end
 
   def plist; <<~EOS
