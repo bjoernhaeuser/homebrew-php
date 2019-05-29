@@ -4,8 +4,8 @@ class Php71Igbinary < AbstractPhp71Extension
   init
   desc "Igbinary is a replacement for the standard php serializer."
   homepage "https://pecl.php.net/package/igbinary"
-  url "https://github.com/igbinary/igbinary/archive/2.0.5.tar.gz"
-  sha256 "1d06fc3586d61fcffbae24a46649db54d938168586557965bc1346f6d6568555"
+  url "https://github.com/igbinary/igbinary/archive/3.0.1.tar.gz"
+  sha256 "5959607f3e236e19a9d01e1a8c74800fb3138f3528ba6601deedbd8b83ab12f1"
   head "https://github.com/igbinary/igbinary.git"
 
   depends_on "igbinary" => :build
