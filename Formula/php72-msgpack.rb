@@ -4,8 +4,8 @@ class Php72Msgpack < AbstractPhp72Extension
   init
   desc "MessagePack serialization"
   homepage "https://pecl.php.net/package/msgpack"
-  url "https://pecl.php.net/get/msgpack-2.0.2.tgz"
-  sha256 "b04980df250214419d9c3d9a5cb2761047ddf5effe5bc1481a19fee209041c01"
+  url "https://pecl.php.net/get/msgpack-2.0.3.tgz"
+  sha256 "9dfa3c79d985334f82a88b7577f81d3ce4114211af064cffccf4d7b084a28842"
   head "https://github.com/msgpack/msgpack-php.git"
   revision 1
 
