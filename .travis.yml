@@ -1,7 +1,7 @@
 language: c
 os: osx
 compiler: clang
-osx_image: xcode10.1
+osx_image: xcode10.2
 cache:
 directories:
   - /usr/local/Homebrew/Library/Homebrew/vendor/bundle
@@ -18,6 +18,4 @@ before_install:
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
 
 script:
-  - sudo softwareupdate -l
-  - sudo softwareupdate -i "Command Line Tools (macOS High Sierra version 10.13) for Xcode-10.1"
   - brew test-bot --ci-auto
