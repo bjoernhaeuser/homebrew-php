@@ -19,5 +19,5 @@ before_install:
 
 script:
   - sudo softwareupdate -l
-  - sudo softwareupdate -i "Command Line Tools (macOS High Sierra version 10.13) for Xcode-10.1"
+  - sudo softwareupdate -i "Command Line Tools (macOS Mojave version 10.14) for Xcode-10.2"
   - brew test-bot --ci-auto
