@@ -18,6 +18,4 @@ before_install:
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
 
 script:
-  - sudo softwareupdate -l
-  - sudo softwareupdate -i "Command Line Tools (macOS Mojave version 10.14) for Xcode-10.2"
-  - brew test-bot --ci-auto
+  - brew test-bot
