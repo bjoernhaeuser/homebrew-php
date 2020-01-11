@@ -4,8 +4,8 @@ class Php73Memcached < AbstractPhp73Extension
   init
   desc "Memcached via libmemcached library"
   homepage "https://pecl.php.net/package/memcached"
-  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.1.3.tar.gz"
-  sha256 "4b87296d69ad90e2c2f8767a45296730f1a64cbd49e8532e6022c413716ae790"
+  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.1.5.tar.gz"
+  sha256 "3fa7508f94ebe0e541b43df1cc9511697a1c479813d0599183e0a1391b2717d8"
 
   option "with-sasl", "Build with sasl support"
 
@@ -13,12 +13,14 @@ class Php73Memcached < AbstractPhp73Extension
   depends_on "php73-igbinary"
   depends_on "igbinary" => :build
   depends_on "libmemcached"
+  depends_on "zlib" => :build
 
   def install
     args = []
     args << "--with-libmemcached-dir=#{Formula["libmemcached"].opt_prefix}"
     args << "--enable-memcached-igbinary"
     args << "--disable-memcached-sasl" if build.without? "sasl"
+    args << "--with-zlib-dir=#{Formula["zlib"].opt_prefix}"
 
     safe_phpize
 
