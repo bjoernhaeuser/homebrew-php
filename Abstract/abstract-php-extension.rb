@@ -55,8 +55,8 @@ class AbstractPhpExtension < Formula
   end
 
   def php_formula
-    if "php" + php_branch.sub(".", "") != "php73"
-      "php" + php_branch.sub(".", "")
+    if "php" + php_branch.sub(".", "") != "php74"
+      "php@" + php_branch
     else
       "php"
     end
@@ -222,6 +222,6 @@ class AbstractPhp73Extension < AbstractPhpExtension
 
   def self.init(opts = [])
     super()
-    depends_on "php" => opts if build.with?("homebrew-php")
+    depends_on "php@7.3" => opts if build.with?("homebrew-php")
   end
 end
